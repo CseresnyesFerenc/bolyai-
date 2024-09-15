@@ -14,9 +14,18 @@ print(23*"1"+8*"P"+9*"1"+"\n1"+
       3*"1"+13*"P"+23*"1"+"\n1"+
       39*"1")
 print("idk")
-a=11
-b=17
+a=2.7
+b=7.9
+c=29.7
+d=50
+e=90
+f=130
+g=60
+perc=round((a/d+b/e+c/f)*60)
+ora=round((a/d+b/e+c/f))
+h=8
+j=60
 print("a.) feladat:\n"+
-      20*"-"+"\nA","szükséges idő az egyetemig:",round(a/b,2),"\nb.) feladat:"+
-      "\n-"+19*"-"+"\nA szükséges idő az egyetemig:",round(a/b*60),"\nc.) feladat:"
-      "\n-"+19*"-"+"\nAz indulási idő: 7:21")
+      20*"-"+"\nA","szükséges idő az egyetemig:",round((a/d)+(b/e)+(c/f),2),"óra","\nb.) feladat:"+
+      "\n-"+19*"-"+"\nA szükséges idő az egyetemig:",round((a/d+b/e+c/f)*60),"perc","\nc.) feladat:"
+      "\n-"+19*"-"+"\nAz indulási idő:",h-1,":",j-perc)
