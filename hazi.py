@@ -29,3 +29,8 @@ print("a.) feladat:\n"+
       20*"-"+"\nA","szükséges idő az egyetemig:",round((a/d)+(b/e)+(c/f),2),"óra","\nb.) feladat:"+
       "\n-"+19*"-"+"\nA szükséges idő az egyetemig:",round((a/d+b/e+c/f)*60),"perc","\nc.) feladat:"
       "\n-"+19*"-"+"\nAz indulási idő:",h-1,":",j-perc)
+m=float(input("Kérem adja meg a magasságát m-ben:"))
+tt=float(input("Kérem adja meg a súlyát kg-ben:"))
+print(20*"*"+5*"-"+20*"*")
+print("Az ön testtömeg indexe:",round(tt/(m)**2,2))
+print("Az ön testtömeg indexe:",round())
