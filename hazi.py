@@ -29,8 +29,22 @@ print("a.) feladat:\n"+
       20*"-"+"\nA","szükséges idő az egyetemig:",round((a/d)+(b/e)+(c/f),2),"óra","\nb.) feladat:"+
       "\n-"+19*"-"+"\nA szükséges idő az egyetemig:",round((a/d+b/e+c/f)*60),"perc","\nc.) feladat:"
       "\n-"+19*"-"+"\nAz indulási idő:",h-1,":",j-perc)
-m=float(input("Kérem adja meg a magasságát m-ben:"))
-tt=float(input("Kérem adja meg a súlyát kg-ben:"))
-print(20*"*"+5*"-"+20*"*")
-print("Az ön testtömeg indexe:",round(tt/(m)**2,2))
-print("Az ön testtömeg indexe:",round())
+
+
+def ev_szin(ev):
+      if ev < 1984 or ev > 2043:
+            return "Az év nincs a tartományban (1984-2043)."
+      pozicio = (ev - 1984) % 60 + 1
+      if pozicio in [1, 2, 11, 12, 21, 22, 31, 32, 41, 42, 51, 52]:
+            return "Zöld"
+      elif pozicio in [3, 4, 13, 14, 23, 24, 33, 34, 43, 44, 53, 54]:
+            return "Piros"
+      elif pozicio in [5, 6, 15, 16, 25, 26, 35, 36, 45, 46, 55, 56]:
+            return "Sárga"
+      elif pozicio in [7, 8, 17, 18, 27, 28, 37, 38, 47, 48, 57, 58]:
+            return "Fehér"
+      elif pozicio in [9, 10, 19, 20, 29, 30, 39, 40, 49, 50, 59, 60]:
+            return "Fekete"
+ev = int(input("Add meg az évet (1984-2043): "))
+print("Az év színe: " + ev_szin(ev))
+
