@@ -11,3 +11,4 @@ for i in range(hossz):
         print(t2[i]+"*",end='')
     else:
         print(t2[i])
+
