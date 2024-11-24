@@ -7,7 +7,7 @@ def harommal_oszthatok(lista):
     return darab
 szamok=[]
 
-print("Adj meg számokat! A program befejezéséhez írd be, hogy 0.")
+print("Adj meg számokat!, 0-val kiléphet a ciklusból")
 
 bemenet=input("Szám:")
 while bemenet!="0":
@@ -32,7 +32,7 @@ while bemenet!="0":
         if helyes==1:
             szamok.append(int(bemenet))
         else:
-            print("Ez nem egy szám, próbáld újra!")
+            print("Ez nem egy szabályos szám!")
     
     bemenet=input("Szám: ")
 
