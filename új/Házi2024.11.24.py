@@ -15,8 +15,8 @@ while bemenet!="0":
     if bemenet[0]=="-":
         helyes=1  
         for i in range(1,len(bemenet)):
-            if bemenet[i] not in"0123456789":
-                helyes=0 
+            if bemenet[i] not in "0123456789":
+                helyes =0
                 break    #A brake az egy vezérlő utasítás, ami a ciklusokat azonnal megszakítja
         if helyes==1:
             szamok.append(int(bemenet))
