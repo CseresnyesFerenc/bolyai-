@@ -50,7 +50,7 @@ else:
     print("Nincs köbszám a sorozatban.")
 
 for num in lista1:
-    if num >= 0 and (num ** 0.5).is_integer():
+    if num >= 0 and (num ** 0.5).is_integer(): # .is_integer leellenőrzi hogy a változó nem  negatív szám-e és bogy a négyzetgyöke egész
         print("A szám:", num , "Négyzetgyöke:",int(num ** 0.5))
 found=False
 for i in range(len(lista1)-1):
