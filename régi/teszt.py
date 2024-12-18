@@ -1,4 +1,4 @@
-x=float(input("Kerem adja meg a magasságát m-ben"))
+ x=float(input("Kerem adja meg a magasságát m-ben"))
 y=float(input("Kérem adja meg a testömegét kg-ban:"))
 print(20*"*",8*"-",20*"*")
 print("Az ön testömeg indexe:", round(y/(x)**2,2),"%")
